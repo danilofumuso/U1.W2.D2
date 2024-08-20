@@ -62,14 +62,12 @@ if (totalShoppingCart > 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-const totalShoppingCart2 = 33.5;
-const shippingCost2 = 10;
-const blackFridayDiscount = 0.2;
+const blackFridayDiscount = 0.8; //sconto del 20%
 
-if (totalShoppingCart2 - totalShoppingCart2 * blackFridayDiscount > 50) {
-  console.log("Total Cost= ", totalShoppingCart2 - totalShoppingCart2 * blackFridayDiscount);
+if (totalShoppingCart * blackFridayDiscount > 50) {
+  console.log("Total Cost= ", totalShoppingCart * blackFridayDiscount);
 } else {
-  console.log("Total Cost= ", totalShoppingCart2 - totalShoppingCart2 * blackFridayDiscount + shippingCost);
+  console.log("Total Cost= ", totalShoppingCart * blackFridayDiscount + shippingCost);
 }
 
 /* ESERCIZIO 7
@@ -168,8 +166,17 @@ console.log(me);
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-let numbers = [];
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbers = [];
+numbers.push(1);
+numbers.push(2);
+numbers.push(3);
+numbers.push(4);
+numbers.push(5);
+numbers.push(6);
+numbers.push(7);
+numbers.push(8);
+numbers.push(9);
+numbers.push(10);
 console.log(numbers);
 
 /* ESERCIZIO 15
